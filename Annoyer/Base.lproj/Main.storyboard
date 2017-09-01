@@ -25,7 +25,7 @@
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
                                         <menuItem title="Preferences…" enabled="NO" keyEquivalent="," id="BOF-NM-1cW"/>
-                                        <menuItem title="Lock App..." enabled="NO" keyEquivalent="l" id="MgJ-Ha-Wbn">
+                                        <menuItem title="Lock App..." hidden="YES" enabled="NO" keyEquivalent="l" id="MgJ-Ha-Wbn">
                                             <connections>
                                                 <segue destination="arF-lI-Qsq" kind="modal" id="D1Q-zf-yft"/>
                                             </connections>
