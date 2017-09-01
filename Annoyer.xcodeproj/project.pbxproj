@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F4D5EFC1F58DC67004D2D91 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D5EFB1F58DC67004D2D91 /* ViewController2.swift */; };
 		2F6820201F57AE5500590733 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68201F1F57AE5500590733 /* AppDelegate.swift */; };
 		2F6820221F57AE5500590733 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6820211F57AE5500590733 /* ViewController.swift */; };
 		2F6820241F57AE5500590733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F6820231F57AE5500590733 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F4D5EFB1F58DC67004D2D91 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		2F68201C1F57AE5500590733 /* Annoyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Annoyer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F68201F1F57AE5500590733 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F6820211F57AE5500590733 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				2F6820211F57AE5500590733 /* ViewController.swift */,
 				2F6820231F57AE5500590733 /* Assets.xcassets */,
 				2F6820251F57AE5500590733 /* Main.storyboard */,
+				2F4D5EFB1F58DC67004D2D91 /* ViewController2.swift */,
 				2F6820281F57AE5500590733 /* Info.plist */,
 			);
 			path = Annoyer;
@@ -260,6 +263,7 @@
 			files = (
 				2F6820221F57AE5500590733 /* ViewController.swift in Sources */,
 				2F6820201F57AE5500590733 /* AppDelegate.swift in Sources */,
+				2F4D5EFC1F58DC67004D2D91 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +511,7 @@
 				2F6820431F57AE5500590733 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F6820441F57AE5500590733 /* Build configuration list for PBXNativeTarget "AnnoyerTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +520,7 @@
 				2F6820461F57AE5500590733 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F6820471F57AE5500590733 /* Build configuration list for PBXNativeTarget "AnnoyerUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +529,7 @@
 				2F6820491F57AE5500590733 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
