@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2F4D5EFC1F58DC67004D2D91 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D5EFB1F58DC67004D2D91 /* ViewController2.swift */; };
+		2F4D5EFF1F58F23A004D2D91 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4D5EFE1F58F23A004D2D91 /* AVFoundation.framework */; };
+		2F4D5F011F58F46F004D2D91 /* 1000hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2F4D5F001F58F46F004D2D91 /* 1000hz.wav */; };
+		2F4D5F031F58F698004D2D91 /* 5000hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2F4D5F021F58F698004D2D91 /* 5000hz.wav */; };
+		2F4D5F051F58F69F004D2D91 /* 10000hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2F4D5F041F58F69F004D2D91 /* 10000hz.wav */; };
+		2F4D5F071F58F6A5004D2D91 /* 15000hz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2F4D5F061F58F6A5004D2D91 /* 15000hz.wav */; };
 		2F6820201F57AE5500590733 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68201F1F57AE5500590733 /* AppDelegate.swift */; };
 		2F6820221F57AE5500590733 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6820211F57AE5500590733 /* ViewController.swift */; };
 		2F6820241F57AE5500590733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F6820231F57AE5500590733 /* Assets.xcassets */; };
@@ -35,6 +40,11 @@
 
 /* Begin PBXFileReference section */
 		2F4D5EFB1F58DC67004D2D91 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		2F4D5EFE1F58F23A004D2D91 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2F4D5F001F58F46F004D2D91 /* 1000hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1000hz.wav; sourceTree = "<group>"; };
+		2F4D5F021F58F698004D2D91 /* 5000hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 5000hz.wav; sourceTree = "<group>"; };
+		2F4D5F041F58F69F004D2D91 /* 10000hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 10000hz.wav; sourceTree = "<group>"; };
+		2F4D5F061F58F6A5004D2D91 /* 15000hz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 15000hz.wav; sourceTree = "<group>"; };
 		2F68201C1F57AE5500590733 /* Annoyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Annoyer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F68201F1F57AE5500590733 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F6820211F57AE5500590733 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F4D5EFF1F58F23A004D2D91 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F4D5EFD1F58F23A004D2D91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F4D5EFE1F58F23A004D2D91 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2F6820131F57AE5500590733 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +100,7 @@
 				2F6820301F57AE5500590733 /* AnnoyerTests */,
 				2F68203B1F57AE5500590733 /* AnnoyerUITests */,
 				2F68201D1F57AE5500590733 /* Products */,
+				2F4D5EFD1F58F23A004D2D91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +117,10 @@
 		2F68201E1F57AE5500590733 /* Annoyer */ = {
 			isa = PBXGroup;
 			children = (
+				2F4D5F001F58F46F004D2D91 /* 1000hz.wav */,
+				2F4D5F021F58F698004D2D91 /* 5000hz.wav */,
+				2F4D5F041F58F69F004D2D91 /* 10000hz.wav */,
+				2F4D5F061F58F6A5004D2D91 /* 15000hz.wav */,
 				2F68201F1F57AE5500590733 /* AppDelegate.swift */,
 				2F6820211F57AE5500590733 /* ViewController.swift */,
 				2F6820231F57AE5500590733 /* Assets.xcassets */,
@@ -236,7 +260,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F6820241F57AE5500590733 /* Assets.xcassets in Resources */,
+				2F4D5F031F58F698004D2D91 /* 5000hz.wav in Resources */,
+				2F4D5F011F58F46F004D2D91 /* 1000hz.wav in Resources */,
 				2F6820271F57AE5500590733 /* Main.storyboard in Resources */,
+				2F4D5F051F58F69F004D2D91 /* 10000hz.wav in Resources */,
+				2F4D5F071F58F6A5004D2D91 /* 15000hz.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

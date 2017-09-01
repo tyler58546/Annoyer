@@ -7,11 +7,15 @@
 //
 
 import Cocoa
+import AVFoundation
 
 class ViewController: NSViewController {
     
     @IBOutlet weak var ttsField: NSTextField!
     @IBOutlet weak var voiceSelector: NSPopUpButton!
+    @IBOutlet weak var freqSelector: NSSlider!
+    
+    var onekhz: AVAudioPlayer!
     
     let loop = RunLoop.current
     let synth = NSSpeechSynthesizer()
@@ -33,6 +37,26 @@ class ViewController: NSViewController {
             }
         }
     }
+    @IBAction func freqPlayButtonPressed(_ sender: Any) {
+        let freq = freqSelector.doubleValue
+        var file = "1000hz"
+        
+        if (freq == 1) {file = "1000hz.wav"}
+        if (freq == 2) {file = "5000hz.wav"}
+        if (freq == 3) {file = "10000hz.wav"}
+        if (freq == 4) {file = "15000hz.wav"}
+        
+        let path = Bundle.main.path(forResource: file, ofType:nil)!
+        let url = URL(fileURLWithPath: path)
+        
+        do {
+            let sound = try AVAudioPlayer(contentsOf: url)
+            onekhz = sound
+            sound.play()
+        } catch {
+            // couldn't load file :(
+        }
+    }
     @IBAction func playButtonPressed(_ sender: Any) {
         speech(text: ttsField.stringValue)
     }
@@ -41,7 +65,7 @@ class ViewController: NSViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        speech(text: "hi")
+        //speech(text: "hi")
     }
 
     override var representedObject: Any? {

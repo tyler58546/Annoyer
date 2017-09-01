@@ -364,7 +364,7 @@
                             </textField>
                             <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="khA-gM-leg">
                                 <rect key="frame" x="18" y="69" width="444" height="24"/>
-                                <sliderCell key="cell" state="on" alignment="left" maxValue="3" tickMarkPosition="above" numberOfTickMarks="4" allowsTickMarkValuesOnly="YES" sliderType="linear" id="fMD-r2-UoY"/>
+                                <sliderCell key="cell" alignment="left" maxValue="3" doubleValue="1" tickMarkPosition="above" numberOfTickMarks="4" allowsTickMarkValuesOnly="YES" sliderType="linear" id="fMD-r2-UoY"/>
                             </slider>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpy-fJ-b5w">
                                 <rect key="frame" x="12" y="101" width="32" height="17"/>
@@ -408,6 +408,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="freqPlayButtonPressed:" target="XfG-lQ-9wD" id="rtb-Ui-b8h"/>
+                                </connections>
                             </button>
                             <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cya-v9-WDB">
                                 <rect key="frame" x="20" y="17" width="251" height="24"/>
@@ -468,6 +471,7 @@ DQ
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="freqSelector" destination="khA-gM-leg" id="tvK-N8-7jM"/>
                         <outlet property="ttsField" destination="Cya-v9-WDB" id="P8T-ZM-4qd"/>
                         <outlet property="voiceSelector" destination="var-n8-Oqa" id="aXL-5u-UrK"/>
                     </connections>
