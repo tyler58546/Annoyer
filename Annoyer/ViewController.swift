@@ -39,12 +39,12 @@ class ViewController: NSViewController {
     }
     @IBAction func freqPlayButtonPressed(_ sender: Any) {
         let freq = freqSelector.doubleValue
-        var file = "1000hz"
+        var file = "1000hz.wav"
         
-        if (freq == 1) {file = "1000hz.wav"}
-        if (freq == 2) {file = "5000hz.wav"}
-        if (freq == 3) {file = "10000hz.wav"}
-        if (freq == 4) {file = "15000hz.wav"}
+        if (freq == 0) {file = "1000hz.wav"}
+        if (freq == 1) {file = "5000hz.wav"}
+        if (freq == 2) {file = "10000hz.wav"}
+        if (freq == 3) {file = "15000hz.wav"}
         
         let path = Bundle.main.path(forResource: file, ofType:nil)!
         let url = URL(fileURLWithPath: path)
