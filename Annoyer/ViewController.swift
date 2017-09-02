@@ -14,8 +14,9 @@ class ViewController: NSViewController {
     @IBOutlet weak var ttsField: NSTextField!
     @IBOutlet weak var voiceSelector: NSPopUpButton!
     @IBOutlet weak var freqSelector: NSSlider!
+    @IBOutlet weak var freqPlayButton: NSButton!
     
-    var onekhz: AVAudioPlayer!
+    var tonePlayer: AVAudioPlayer!
     
     let loop = RunLoop.current
     let synth = NSSpeechSynthesizer()
@@ -51,7 +52,7 @@ class ViewController: NSViewController {
         
         do {
             let sound = try AVAudioPlayer(contentsOf: url)
-            onekhz = sound
+            tonePlayer = sound
             sound.play()
         } catch {
             // couldn't load file :(
@@ -59,6 +60,29 @@ class ViewController: NSViewController {
     }
     @IBAction func playButtonPressed(_ sender: Any) {
         speech(text: ttsField.stringValue)
+    }
+    @IBAction func ArmCheck(_ sender: NSButton) {
+        
+        switch sender.state {
+        case NSOnState:
+            freqPlayButton.isEnabled = true
+        case NSOffState:
+            freqPlayButton.isEnabled = false
+        default:
+            freqPlayButton.isEnabled = false
+        }
+    }
+    @IBAction func CVCheck(_ sender: NSButton) {
+        switch sender.state {
+        case NSOnState:
+            voiceSelector.isEnabled = true
+        case NSOffState:
+            voiceSelector.isEnabled = false
+            voiceSelector.selectItem(at: 0)
+        default:
+            voiceSelector.isEnabled = false
+            voiceSelector.selectItem(at: 0)
+        }
     }
 
     override func viewDidLoad() {

@@ -24,6 +24,12 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                                        <menuItem title="Check for Updates..." id="vEi-FW-dDi">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="checkForUpdates:" target="lBF-9H-KDR" id="kZJ-0W-Gsa"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem title="Preferences…" enabled="NO" keyEquivalent="," id="BOF-NM-1cW"/>
                                         <menuItem title="Lock App..." hidden="YES" enabled="NO" keyEquivalent="l" id="MgJ-Ha-Wbn">
                                             <connections>
@@ -316,6 +322,7 @@
                     </connections>
                 </application>
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Annoyer" customModuleProvider="target"/>
+                <customObject id="lBF-9H-KDR" customClass="SUUpdater"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
@@ -325,7 +332,7 @@
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
                     <window key="window" title="Annoyer" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
@@ -355,8 +362,8 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6T-yk-TEa">
-                                <rect key="frame" x="18" y="141" width="116" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="v0.1 by tyler58546" id="vML-oR-nGb">
+                                <rect key="frame" x="18" y="141" width="129" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="v0.2.4 by tyler58546" id="vML-oR-nGb">
                                     <font key="font" metaFont="systemLight" size="13"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -404,7 +411,7 @@
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Yjc-si-GfP">
                                 <rect key="frame" x="408" y="130" width="66" height="32"/>
-                                <buttonCell key="cell" type="push" title="Play" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Cs8-Fl-xog">
+                                <buttonCell key="cell" type="push" title="Play" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Cs8-Fl-xog">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -422,14 +429,18 @@
                             </textField>
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="var-n8-Oqa">
                                 <rect key="frame" x="277" y="15" width="107" height="26"/>
-                                <popUpButtonCell key="cell" type="push" title="Alex" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="rdg-NN-KFY" id="Zy1-TP-reg">
+                                <popUpButtonCell key="cell" type="push" title="Alex" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" enabled="NO" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="rdg-NN-KFY" id="Zy1-TP-reg">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="systemUltraLight" size="13"/>
                                     <menu key="menu" id="l9u-xg-L3P">
                                         <items>
                                             <menuItem title="Alex" state="on" id="rdg-NN-KFY"/>
+                                            <menuItem isSeparatorItem="YES" id="ePV-aD-FZ5"/>
                                             <menuItem title="Good News" id="Xz6-S4-yjJ"/>
                                             <menuItem title="Bad News" id="tbc-cU-SPS"/>
+                                            <menuItem title="Pipe Organ" id="htF-8i-djw">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
                                         </items>
                                     </menu>
                                 </popUpButtonCell>
@@ -450,15 +461,38 @@ DQ
                                     <action selector="playButtonPressed:" target="XfG-lQ-9wD" id="El7-5m-kp5"/>
                                 </connections>
                             </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="C6l-97-Xku">
+                                <rect key="frame" x="151" y="169" width="145" height="18"/>
+                                <buttonCell key="cell" type="check" title="Arm Tone Generator" bezelStyle="regularSquare" imagePosition="left" inset="2" id="fWv-e6-okM">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="ArmCheck:" target="XfG-lQ-9wD" id="KUU-hi-fVp"/>
+                                </connections>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="I43-Yz-CDn">
+                                <rect key="frame" x="151" y="149" width="113" height="18"/>
+                                <buttonCell key="cell" type="check" title="Custom Voices" bezelStyle="regularSquare" imagePosition="left" inset="2" id="85s-qC-k43">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="CVCheck:" target="XfG-lQ-9wD" id="fLN-DU-zBH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="C6l-97-Xku" firstAttribute="leading" secondItem="4fN-iV-k28" secondAttribute="trailing" constant="8" id="12h-81-Whs"/>
                             <constraint firstAttribute="trailing" secondItem="khA-gM-leg" secondAttribute="trailing" constant="20" id="4Mn-eH-NZt"/>
                             <constraint firstItem="var-n8-Oqa" firstAttribute="leading" secondItem="Cya-v9-WDB" secondAttribute="trailing" constant="8" id="BNV-bd-Bhw"/>
                             <constraint firstAttribute="bottom" secondItem="51d-kt-lQK" secondAttribute="bottom" constant="18" id="DFc-2c-Di3"/>
                             <constraint firstItem="khA-gM-leg" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="EMi-0N-T55"/>
+                            <constraint firstItem="I43-Yz-CDn" firstAttribute="top" secondItem="C6l-97-Xku" secondAttribute="bottom" constant="6" id="IyE-dR-4Af"/>
                             <constraint firstItem="Cya-v9-WDB" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="Lvx-SJ-fJR"/>
                             <constraint firstItem="4fN-iV-k28" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="SEG-cM-EHC"/>
                             <constraint firstAttribute="bottom" secondItem="Cya-v9-WDB" secondAttribute="bottom" constant="17" id="Sp2-76-iti"/>
+                            <constraint firstItem="I43-Yz-CDn" firstAttribute="leading" secondItem="4fN-iV-k28" secondAttribute="trailing" constant="8" id="UW1-YD-Mmq"/>
                             <constraint firstItem="Yjc-si-GfP" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="59" id="Z4h-yy-qGa"/>
                             <constraint firstAttribute="trailing" secondItem="Yjc-si-GfP" secondAttribute="trailing" constant="12" id="dMg-ag-D9p"/>
                             <constraint firstAttribute="trailing" secondItem="51d-kt-lQK" secondAttribute="trailing" constant="20" id="drP-bK-4JO"/>
@@ -468,9 +502,11 @@ DQ
                             <constraint firstItem="51d-kt-lQK" firstAttribute="leading" secondItem="var-n8-Oqa" secondAttribute="trailing" constant="25" id="wbh-j8-3tG"/>
                             <constraint firstItem="g6T-yk-TEa" firstAttribute="top" secondItem="4fN-iV-k28" secondAttribute="bottom" id="x1M-xj-9X5"/>
                             <constraint firstItem="khA-gM-leg" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="124" id="yoA-Jk-QJJ"/>
+                            <constraint firstItem="C6l-97-Xku" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="32" id="z2i-2B-MbN"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="freqPlayButton" destination="Yjc-si-GfP" id="lgu-lY-OCU"/>
                         <outlet property="freqSelector" destination="khA-gM-leg" id="tvK-N8-7jM"/>
                         <outlet property="ttsField" destination="Cya-v9-WDB" id="P8T-ZM-4qd"/>
                         <outlet property="voiceSelector" destination="var-n8-Oqa" id="aXL-5u-UrK"/>
