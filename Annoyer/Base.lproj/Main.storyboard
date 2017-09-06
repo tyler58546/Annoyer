@@ -373,7 +373,7 @@
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6T-yk-TEa">
                                 <rect key="frame" x="18" y="141" width="129" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="v0.2.6 by tyler58546" id="vML-oR-nGb">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="v0.2.8 by tyler58546" id="vML-oR-nGb">
                                     <font key="font" metaFont="systemLight" size="13"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -667,6 +667,6 @@ DQ
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Nby-f8-Rks"/>
+        <segue reference="XLI-Wa-kWB"/>
     </inferredMetricsTieBreakers>
 </document>
