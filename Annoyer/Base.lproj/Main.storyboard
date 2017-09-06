@@ -31,7 +31,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Preferences…" enabled="NO" keyEquivalent="," id="BOF-NM-1cW"/>
-                                        <menuItem title="Lock App..." hidden="YES" enabled="NO" keyEquivalent="l" id="MgJ-Ha-Wbn">
+                                        <menuItem title="Lock App..." keyEquivalent="l" id="MgJ-Ha-Wbn">
                                             <connections>
                                                 <segue destination="arF-lI-Qsq" kind="modal" id="D1Q-zf-yft"/>
                                             </connections>
@@ -402,18 +402,18 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIZ-Nc-TZn">
-                                <rect key="frame" x="298" y="101" width="26" height="17"/>
+                                <rect key="frame" x="289" y="101" width="44" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="10k" id="324-yA-Ldm">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="10khz" id="324-yA-Ldm">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VU7-lX-Ki9">
-                                <rect key="frame" x="433" y="101" width="37" height="17"/>
+                                <rect key="frame" x="430" y="101" width="44" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="15k" id="N9o-kK-FnQ">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="15khz" id="N9o-kK-FnQ">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -604,7 +604,7 @@ DQ
         <!--View Controller2-->
         <scene sceneID="U2x-JT-MXs">
             <objects>
-                <viewController id="arF-lI-Qsq" customClass="ViewController2" sceneMemberID="viewController">
+                <viewController id="arF-lI-Qsq" customClass="ViewController2" customModule="Annoyer" sceneMemberID="viewController">
                     <view key="view" id="PIX-je-Dwb">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="150"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -667,6 +667,6 @@ DQ
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XLI-Wa-kWB"/>
+        <segue reference="Nby-f8-Rks"/>
     </inferredMetricsTieBreakers>
 </document>
