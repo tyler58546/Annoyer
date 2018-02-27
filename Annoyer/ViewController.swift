@@ -88,6 +88,7 @@ class ViewController: NSViewController {
         let pref_defaultText = defaults.object(forKey: "defaultText") as? String ?? String()
         if (pref_autoArm) {
             armCB.state = NSOnState
+            freqPlayButton.isEnabled = true
         }
         if (pref_customVoices) {
             voiceSelector.isEnabled = true
