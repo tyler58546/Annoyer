@@ -15,6 +15,8 @@ class ViewController: NSViewController {
     @IBOutlet weak var voiceSelector: NSPopUpButton!
     @IBOutlet weak var freqSelector: NSSlider!
     @IBOutlet weak var freqPlayButton: NSButton!
+    @IBOutlet weak var armCB: NSButton!
+    @IBOutlet weak var versionText: NSTextField!
     
     var tonePlayer: AVAudioPlayer!
     
@@ -72,25 +74,32 @@ class ViewController: NSViewController {
             freqPlayButton.isEnabled = false
         }
     }
-    @IBAction func CVCheck(_ sender: NSButton) {
-        switch sender.state {
-        case NSOnState:
-            voiceSelector.isEnabled = true
-        case NSOffState:
-            voiceSelector.isEnabled = false
-            voiceSelector.selectItem(at: 0)
-        default:
-            voiceSelector.isEnabled = false
-            voiceSelector.selectItem(at: 0)
-        }
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        //speech(text: "hi")
+        
+        ///LOAD PREFRENCES
+        let defaults = UserDefaults.standard
+        let pref_autoArm = defaults.object(forKey: "autoArm") as? Bool ?? Bool()
+        let pref_defaultVoice = defaults.object(forKey: "defaultVoice") as? Int ?? Int()
+        let pref_customVoices = defaults.object(forKey: "customVoices") as? Bool ?? Bool()
+        let pref_defaultText = defaults.object(forKey: "defaultText") as? String ?? String()
+        if (pref_autoArm) {
+            armCB.state = NSOnState
+        }
+        if (pref_customVoices) {
+            voiceSelector.isEnabled = true
+            voiceSelector.selectItem(at: pref_defaultVoice)
+        }
+        ttsField.stringValue = pref_defaultText
+        
+        // Set version number indicator
+        let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"]  as? String
+        versionText.stringValue = "v\(version!) by tyler58546"
     }
+    
 
     override var representedObject: Any? {
         didSet {

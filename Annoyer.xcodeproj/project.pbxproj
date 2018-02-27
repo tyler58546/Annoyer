@@ -20,6 +20,7 @@
 		2F6820271F57AE5500590733 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F6820251F57AE5500590733 /* Main.storyboard */; };
 		2F6820321F57AE5500590733 /* AnnoyerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6820311F57AE5500590733 /* AnnoyerTests.swift */; };
 		2F68203D1F57AE5500590733 /* AnnoyerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F68203C1F57AE5500590733 /* AnnoyerUITests.swift */; };
+		2F989FEF20424BE90022CF4A /* SettingsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F989FEE20424BE90022CF4A /* SettingsWindow.swift */; };
 		30C728F7F93F1576F52DD316 /* Pods_AnnoyerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D63DC14DA24DCDA14270959 /* Pods_AnnoyerTests.framework */; };
 		388EA406CC81F2206A7FB3D9 /* Pods_Annoyer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A6D77075A662857849D5BA /* Pods_Annoyer.framework */; };
 		5627E434C886DE9FE66A74CA /* Pods_AnnoyerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E3E7FFE953090F3EBF8CF8 /* Pods_AnnoyerUITests.framework */; };
@@ -65,6 +66,7 @@
 		2F6820381F57AE5500590733 /* AnnoyerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnnoyerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F68203C1F57AE5500590733 /* AnnoyerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnoyerUITests.swift; sourceTree = "<group>"; };
 		2F68203E1F57AE5500590733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F989FEE20424BE90022CF4A /* SettingsWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindow.swift; sourceTree = "<group>"; };
 		651D3F8E4A54C75C6ED64E2C /* Pods-Annoyer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Annoyer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Annoyer/Pods-Annoyer.release.xcconfig"; sourceTree = "<group>"; };
 		8C61FBEF2330F53C02F9FF96 /* Pods-AnnoyerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnnoyerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnnoyerTests/Pods-AnnoyerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D63DC14DA24DCDA14270959 /* Pods_AnnoyerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnnoyerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +149,7 @@
 				2F6820211F57AE5500590733 /* ViewController.swift */,
 				2F6820231F57AE5500590733 /* Assets.xcassets */,
 				2F6820251F57AE5500590733 /* Main.storyboard */,
+				2F989FEE20424BE90022CF4A /* SettingsWindow.swift */,
 				2F4D5EFB1F58DC67004D2D91 /* ViewController2.swift */,
 				2F6820281F57AE5500590733 /* Info.plist */,
 			);
@@ -486,6 +489,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F989FEF20424BE90022CF4A /* SettingsWindow.swift in Sources */,
 				2F6820221F57AE5500590733 /* ViewController.swift in Sources */,
 				2F6820201F57AE5500590733 /* AppDelegate.swift in Sources */,
 				2F4D5EFC1F58DC67004D2D91 /* ViewController2.swift in Sources */,
