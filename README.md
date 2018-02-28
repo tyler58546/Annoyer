@@ -11,5 +11,5 @@ Annoyer is an application designed for Mac, Windows, and iOS. Its main purpose i
 # Other Versions
 
 - Annoyer for Mac (This Version)
-- (Annoyer for iOS)[https://github.com/tyler58546/Annoyer-Mobile]
-- (Annoyer for Windows)[https://github.com/tyler58546/Annoyer-for-Windows]
+- [Annoyer for iOS](https://github.com/tyler58546/Annoyer-Mobile)
+- [Annoyer for Windows](https://github.com/tyler58546/Annoyer-for-Windows)
