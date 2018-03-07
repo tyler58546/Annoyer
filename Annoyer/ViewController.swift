@@ -93,6 +93,14 @@ class ViewController: NSViewController {
         if (pref_customVoices) {
             voiceSelector.isEnabled = true
             voiceSelector.selectItem(at: pref_defaultVoice)
+            let newVoice = voiceSelector.selectedItem?.title
+            for v in NSSpeechSynthesizer.availableVoices() {
+                let attrs = NSSpeechSynthesizer.attributes(forVoice: v)
+                if attrs["VoiceName"] as? String == newVoice {
+                    synth.setVoice(v)
+                    break
+                }
+            }
         }
         ttsField.stringValue = pref_defaultText
         
