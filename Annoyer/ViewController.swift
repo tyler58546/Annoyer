@@ -101,6 +101,7 @@ class ViewController: NSViewController {
                     break
                 }
             }
+            
         }
         ttsField.stringValue = pref_defaultText
         
