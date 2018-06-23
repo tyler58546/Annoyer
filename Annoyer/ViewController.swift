@@ -32,9 +32,9 @@ class ViewController: NSViewController {
         let newVoice = voiceSelector.selectedItem?.title
         
         
-        for v in NSSpeechSynthesizer.availableVoices() {
+        for v in NSSpeechSynthesizer.availableVoices {
             let attrs = NSSpeechSynthesizer.attributes(forVoice: v)
-            if attrs["VoiceName"] as? String == newVoice {
+            if attrs[NSSpeechSynthesizer.VoiceAttributeKey.name] as? String == newVoice {
                 synth.setVoice(v)
                 break
             }
@@ -66,9 +66,9 @@ class ViewController: NSViewController {
     @IBAction func ArmCheck(_ sender: NSButton) {
         
         switch sender.state {
-        case NSOnState:
+        case NSControl.StateValue.on:
             freqPlayButton.isEnabled = true
-        case NSOffState:
+        case NSControl.StateValue.off:
             freqPlayButton.isEnabled = false
         default:
             freqPlayButton.isEnabled = false
@@ -87,16 +87,16 @@ class ViewController: NSViewController {
         let pref_customVoices = defaults.object(forKey: "customVoices") as? Bool ?? Bool()
         let pref_defaultText = defaults.object(forKey: "defaultText") as? String ?? String()
         if (pref_autoArm) {
-            armCB.state = NSOnState
+            armCB.state = NSControl.StateValue.on
             freqPlayButton.isEnabled = true
         }
         if (pref_customVoices) {
             voiceSelector.isEnabled = true
             voiceSelector.selectItem(at: pref_defaultVoice)
             let newVoice = voiceSelector.selectedItem?.title
-            for v in NSSpeechSynthesizer.availableVoices() {
+            for v in NSSpeechSynthesizer.availableVoices {
                 let attrs = NSSpeechSynthesizer.attributes(forVoice: v)
-                if attrs["VoiceName"] as? String == newVoice {
+                if attrs[NSSpeechSynthesizer.VoiceAttributeKey.name] as? String == newVoice {
                     synth.setVoice(v)
                     break
                 }

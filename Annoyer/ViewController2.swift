@@ -12,7 +12,7 @@ class ViewController2: NSViewController {
     @IBOutlet weak var pwField: NSSecureTextField!
 
     @IBAction func quitButtonPressed(_ sender: Any) {
-        NSApplication.shared().terminate(self)
+        NSApplication.shared.terminate(self)
     }
     @IBAction func unlockButtonPressed(_ sender: Any) {
         let pwEntered = pwField.stringValue

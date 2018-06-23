@@ -20,7 +20,7 @@ class SettingsWindow: NSViewController {
         let pref_customVoices = defaults.object(forKey: "customVoices") as? Bool ?? Bool()
         let pref_defaultText = defaults.object(forKey: "defaultText") as? String ?? String()
         if (pref_autoArm) {
-            autoArm.state = NSOnState
+            autoArm.state = NSControl.StateValue.on
         }
         if (pref_customVoices) {
             defaultVoice.isEnabled = true
@@ -41,9 +41,9 @@ class SettingsWindow: NSViewController {
     @IBAction func saveSettings(_ sender: Any) {
         var pref_autoArm = false
         switch autoArm.state {
-        case NSOnState:
+        case NSControl.StateValue.on:
             pref_autoArm = true
-        case NSOffState:
+        case NSControl.StateValue.off:
             pref_autoArm = false
         default:
             pref_autoArm = false
@@ -51,9 +51,9 @@ class SettingsWindow: NSViewController {
         let pref_defaultVoice = defaultVoice.indexOfSelectedItem
         var pref_customVoices = false
         switch cvCheck.state {
-        case NSOnState:
+        case NSControl.StateValue.on:
             pref_customVoices = true
-        case NSOffState:
+        case NSControl.StateValue.off:
             pref_customVoices = false
         default:
             pref_customVoices = false
@@ -72,9 +72,9 @@ class SettingsWindow: NSViewController {
     }
     @IBAction func cvCheckClick(_ sender: Any) {
         switch cvCheck.state {
-        case NSOnState:
+        case NSControl.StateValue.on:
             defaultVoice.isEnabled = true
-        case NSOffState:
+        case NSControl.StateValue.off:
             defaultVoice.isEnabled = false
             defaultVoice.selectItem(at: 0)
         default:

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
         <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
     </dependencies>
@@ -571,6 +571,7 @@ Gw
                             <constraint firstItem="U3X-Lu-1JV" firstAttribute="top" secondItem="eQa-Ca-mrq" secondAttribute="bottom" constant="8" id="fJQ-15-oGb"/>
                             <constraint firstItem="U3X-Lu-1JV" firstAttribute="leading" secondItem="U9E-2T-HzH" secondAttribute="leading" constant="20" id="fUE-Wa-A1c"/>
                             <constraint firstItem="eQa-Ca-mrq" firstAttribute="leading" secondItem="U9E-2T-HzH" secondAttribute="leading" constant="20" id="hbX-k1-lq4"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="39v-KO-fWf" secondAttribute="trailing" constant="20" id="n24-NI-6gL"/>
                         </constraints>
                     </view>
                     <connections>
