@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F26251D20E15676008C2143 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26251C20E15676008C2143 /* TermsViewController.swift */; };
 		2F4148C21F5A5A35003A4F0A /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 2F4148C11F5A5A35003A4F0A /* dsa_pub.pem */; };
 		2F4D5EFC1F58DC67004D2D91 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4D5EFB1F58DC67004D2D91 /* ViewController2.swift */; };
 		2F4D5EFF1F58F23A004D2D91 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4D5EFE1F58F23A004D2D91 /* AVFoundation.framework */; };
@@ -47,6 +48,7 @@
 		161A65DC5A99C3789106805E /* Pods-AnnoyerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnnoyerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnnoyerTests/Pods-AnnoyerTests.release.xcconfig"; sourceTree = "<group>"; };
 		17A6D77075A662857849D5BA /* Pods_Annoyer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Annoyer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DFD70C758623E5EFC28F17F /* Pods-Annoyer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Annoyer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Annoyer/Pods-Annoyer.debug.xcconfig"; sourceTree = "<group>"; };
+		2F26251C20E15676008C2143 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		2F4148C11F5A5A35003A4F0A /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		2F4D5EFB1F58DC67004D2D91 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		2F4D5EFE1F58F23A004D2D91 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -149,6 +151,7 @@
 				2F6820211F57AE5500590733 /* ViewController.swift */,
 				2F6820231F57AE5500590733 /* Assets.xcassets */,
 				2F6820251F57AE5500590733 /* Main.storyboard */,
+				2F26251C20E15676008C2143 /* TermsViewController.swift */,
 				2F989FEE20424BE90022CF4A /* SettingsWindow.swift */,
 				2F4D5EFB1F58DC67004D2D91 /* ViewController2.swift */,
 				2F6820281F57AE5500590733 /* Info.plist */,
@@ -496,6 +499,7 @@
 				2F6820221F57AE5500590733 /* ViewController.swift in Sources */,
 				2F6820201F57AE5500590733 /* AppDelegate.swift in Sources */,
 				2F4D5EFC1F58DC67004D2D91 /* ViewController2.swift in Sources */,
+				2F26251D20E15676008C2143 /* TermsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

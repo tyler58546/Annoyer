@@ -74,7 +74,10 @@ class ViewController: NSViewController {
             freqPlayButton.isEnabled = false
         }
     }
-
+    lazy var TermsView: NSViewController = {
+        return self.storyboard!.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "TermsViewController"))
+            as! NSViewController
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -109,7 +112,12 @@ class ViewController: NSViewController {
         let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"]  as? String
         versionText.stringValue = "v\(version!) by tyler58546"
     }
-    
+    override func viewDidAppear() {
+        if (UserDefaults.standard.object(forKey: "Terms") as? Bool != true) {
+            
+            self.presentViewControllerAsSheet(TermsView)
+        }
+    }
 
     override var representedObject: Any? {
         didSet {

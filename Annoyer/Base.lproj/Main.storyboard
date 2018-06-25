@@ -739,6 +739,123 @@ DQ
             </objects>
             <point key="canvasLocation" x="-449" y="601"/>
         </scene>
+        <!--Terms View Controller-->
+        <scene sceneID="34g-NS-uuI">
+            <objects>
+                <viewController identifier="TermsViewController" storyboardIdentifier="TermsViewController" id="d21-B8-LSu" customClass="TermsViewController" customModule="Annoyer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="wsT-3f-ZTA">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="brn-Va-RTJ">
+                                <rect key="frame" x="18" y="263" width="367" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Please agree to the following Terms to use this program." id="nBN-nC-nHy">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1QH-qd-n0R">
+                                <rect key="frame" x="20" y="61" width="410" height="194"/>
+                                <clipView key="contentView" id="rvy-bQ-BQd">
+                                    <rect key="frame" x="1" y="1" width="393" height="192"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" baseWritingDirection="leftToRight" findStyle="panel" allowsCharacterPickerTouchBarItem="NO" allowsNonContiguousLayout="YES" textCompletion="NO" spellingCorrection="YES" id="jkc-8W-xzC">
+                                            <rect key="frame" x="0.0" y="114" width="393" height="328"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="minSize" width="393" height="192"/>
+                                            <size key="maxSize" width="463" height="10000000"/>
+                                            <attributedString key="textStorage">
+                                                <fragment>
+                                                    <string key="content">Copyright © 2017-2018 Tyler Knox
+</string>
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" metaFont="smallSystem"/>
+                                                        <real key="NSKern" value="0.0"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                        <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <real key="NSStrokeWidth" value="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <mutableString key="content">Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</mutableString>
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" metaFont="smallSystem"/>
+                                                        <real key="NSKern" value="0.0"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                        <color key="NSStrokeColor" red="0.23529411764705882" green="0.28235294117647058" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <real key="NSStrokeWidth" value="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="Nui-Sm-mZ1">
+                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="zIc-7u-Lqe">
+                                    <rect key="frame" x="394" y="1" width="15" height="192"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bwQ-bk-3zM">
+                                <rect key="frame" x="360" y="13" width="76" height="32"/>
+                                <buttonCell key="cell" type="push" title="Agree" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Aom-EA-aHq">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="agree_click:" target="d21-B8-LSu" id="XaG-9i-i2x"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wmE-3f-8nz">
+                                <rect key="frame" x="294" y="13" width="66" height="32"/>
+                                <buttonCell key="cell" type="push" title="Quit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aW1-ho-yRz">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="quit_click:" target="d21-B8-LSu" id="9tC-KQ-vUF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="1QH-qd-n0R" firstAttribute="leading" secondItem="wsT-3f-ZTA" secondAttribute="leading" constant="20" id="4EX-gr-I2V"/>
+                            <constraint firstAttribute="bottom" secondItem="wmE-3f-8nz" secondAttribute="bottom" constant="20" id="Cok-Ev-DMF"/>
+                            <constraint firstItem="brn-Va-RTJ" firstAttribute="top" secondItem="wsT-3f-ZTA" secondAttribute="top" constant="20" id="D75-ai-VMG"/>
+                            <constraint firstItem="bwQ-bk-3zM" firstAttribute="leading" secondItem="wmE-3f-8nz" secondAttribute="trailing" constant="12" id="Nq1-Iy-C4p"/>
+                            <constraint firstAttribute="bottom" secondItem="bwQ-bk-3zM" secondAttribute="bottom" constant="20" id="S0q-56-6wT"/>
+                            <constraint firstItem="1QH-qd-n0R" firstAttribute="top" secondItem="brn-Va-RTJ" secondAttribute="bottom" constant="8" id="Up3-aB-KoO"/>
+                            <constraint firstItem="brn-Va-RTJ" firstAttribute="leading" secondItem="wsT-3f-ZTA" secondAttribute="leading" constant="20" id="a3W-OS-qej"/>
+                            <constraint firstAttribute="trailing" secondItem="bwQ-bk-3zM" secondAttribute="trailing" constant="20" id="jTD-Ps-fBz"/>
+                            <constraint firstItem="bwQ-bk-3zM" firstAttribute="top" secondItem="1QH-qd-n0R" secondAttribute="bottom" constant="20" id="lg4-gW-GJI"/>
+                            <constraint firstAttribute="trailing" secondItem="1QH-qd-n0R" secondAttribute="trailing" constant="20" id="wfv-1C-gX4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="odm-Kf-QB8" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-499" y="1028"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="0d5-v0-p0J"/>
